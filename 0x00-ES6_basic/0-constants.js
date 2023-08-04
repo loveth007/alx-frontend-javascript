@@ -1,18 +1,23 @@
+<<<<<<< HEAD
 /* eslint-disable*/
 export function getTaskDescription() {
   const taskDescription = 'I prefer using constants whenever possible.';
   return taskDescription;
+=======
+export function taskFirst() {
+  const task = 'I prefer const when I can.';
+  return task;
+>>>>>>> bfd2142142fde05f860d4c226f9910506a3a713a
 }
 
-export function getFallbackMessage() {
-  return 'However, sometimes using let is necessary.';
+export function getLast() {
+  return ' is okay';
 }
 
-export function getTaskSummary() {
-  let taskSummary = 'For instance, when ';
-  taskSummary += 'the value of a variable needs to be updated.';
-  taskSummary += ' ' + getFallbackMessage();
+export function taskNext() {
+  let combination = 'But sometimes let';
+  combination += getLast();
 
-  return taskSummary;
+  return combination;
 }
 
