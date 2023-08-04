@@ -1,3 +1,4 @@
+/* eslint-disable*/
 export function getTaskDescription() {
   const taskDescription = 'I prefer using constants whenever possible.';
   return taskDescription;

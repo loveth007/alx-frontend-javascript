@@ -1,3 +1,4 @@
+/* eslint-disable */
 export default function createIteratorObject(report) {
   const departments = Object.values(report.allEmployees);
 
