@@ -1,5 +1,4 @@
 module.exports = {
-<<<<<<< HEAD
   'env': {
     'browser': true,
     'es2021': true,
@@ -25,7 +24,6 @@ module.exports = {
   },
   'rules': {
   },
-=======
   env: {
     browser: false,
     es6: true,
@@ -59,5 +57,4 @@ module.exports = {
       excludedFiles: 'babel.config.js',
     }
   ]
->>>>>>> bfd2142142fde05f860d4c226f9910506a3a713a
 };
