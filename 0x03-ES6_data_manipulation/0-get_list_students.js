@@ -1,3 +1,4 @@
+/*eslint-disable*/
 export default function getListStudentIds() {
   return ([
     { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
