@@ -1,7 +1,10 @@
-/*eslint-disable*/
-function cleanSet(set, startString) {
-  const filteredValues = [...set].filter(value => value.startsWith(startString));
-  const cleanedString = filteredValues.map(value => value.substring(startString.length)).join('-');
-  return cleanedString;
+/* eslint-disable array-callback-return */
+export default function cleanSet(set, string) {
+  if (string === undefined || string.length === 0) {
+    return '';
+  }
+  return [...set]
+    .filter((str) => (str !== undefined ? str.startsWith(string) : ''))
+    .map((str) => (str !== undefined ? str.slice(string.length) : ''))
+    .join('-');
 }
-

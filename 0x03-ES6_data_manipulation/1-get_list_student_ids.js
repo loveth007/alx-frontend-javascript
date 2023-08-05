@@ -1,11 +1,7 @@
-/* eslint-disable linebreak-style */
-function getListStudentIds(students) {
-  // Check if the input is an array
-  if (!Array.isArray(students)) {
-    return [];
+/*eslint-disable*/
+export default function getListStudentIds(list) {
+  if (Array.isArray(list)) {
+    return list.map((obj) => obj.id);
   }
-
-  // Map the array of objects to an array of ids
-  return students.map(student => student.id);
+  return [];
 }
-
